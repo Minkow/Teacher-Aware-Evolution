@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Please cite the paper when using this software."
+title: "Teacher-Aware Evolution of Heuristic Programs from Learned Optimization Policies"
+type: software
+authors:
+  - family-names: Chen
+    given-names: Minyu
+  - family-names: Qin
+    given-names: Song
+  - family-names: Wu
+    given-names: Ling-I
+  - family-names: Xue
+    given-names: Jianxin
+  - family-names: Li
+    given-names: Guoqiang
+repository-code: "https://github.com/Minkow/Teacher-Aware-Evolution"
+url: "https://openreview.net/forum?id=dXWka7F0Ie"
+license: MIT
+
