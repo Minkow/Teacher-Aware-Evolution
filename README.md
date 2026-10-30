@@ -97,13 +97,6 @@ terminated and reaped, and their slots are replaced for subsequent evaluations.
 provider/model. Run seeds separately using `--seed` and distinct output paths.
 The launcher never starts a new run inside a nonempty output directory.
 
-</details>
-
-**Default search budget: 100 evaluations.** Five initial programs, five generated initial
-programs, and 30 children from each of the three operators. Each operator uses
-the schedule `8,8,5,5,4`. Outputs retain attempted evaluations and failed
-candidates; a failed candidate does not trigger an extra semantic generation.
-
 ## Project Layout
 
 | Path | Contents |
