@@ -24,8 +24,6 @@ def make_plan(args):
             raise ValueError(f"--{name.replace('_', '-')} must be positive and applicable to {family}")
     if args.train_count is not None and args.train_count <= 0:
         raise ValueError("--train-count must be positive")
-    module = {"jssp": "run_jssp_construct_eoh", "tsp": "run_tsp_construct_eoh",
-              "cvrp": "run_cvrp_construct_eoh", "maxcut": "run_maxcut_flip_eoh"}[family]
     env = {
         "EOH_MAX_FE": "100", "EOH_STRICT_FE": "0", "EOH_INITIAL_LLM_CHILDREN": "5",
         "EOH_INIT_SEED_FIRST": "1",
@@ -53,7 +51,7 @@ def make_plan(args):
         "OMP_NUM_THREADS": "1", "MKL_NUM_THREADS": "1", "OPENBLAS_NUM_THREADS": "1",
     }
     seed_bank = args.seed_programs.resolve() if args.seed_programs else "<initial-programs.json>"
-    command = [sys.executable, "-m", "tae.runners." + module,
+    command = [sys.executable, "-m", f"tae.tasks.{family}.train",
                "--output-dir", str(args.output.resolve()), "--base-url", args.base_url,
                "--model", args.model, "--global-seed", str(args.seed),
                "--seed-programs", str(seed_bank), "--pop-size", "12", "--n-pop", "5",

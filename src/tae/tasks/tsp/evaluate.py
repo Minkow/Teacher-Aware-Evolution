@@ -12,7 +12,7 @@ from pathlib import Path
 
 import numpy as np
 
-from tae.runners.tsp_dataset_io import load_lehd_tsp_txt, load_tsp_pickle
+from tae.tasks.tsp.data import load_lehd_tsp_txt, load_tsp_pickle
 
 ROOT = Path(__file__).resolve().parent
 _HEURISTIC_MODULE = None

@@ -11,7 +11,7 @@ from pathlib import Path
 
 import numpy as np
 
-from tae.runners.cvrp_dataset_io import load_cvrp_pickle, load_lehd_cvrp_txt
+from tae.tasks.cvrp.data import load_cvrp_pickle, load_lehd_cvrp_txt
 
 ROOT = Path(__file__).resolve().parent
 _WORKER_SELECT_NEXT_NODE = None

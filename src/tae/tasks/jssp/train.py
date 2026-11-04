@@ -12,7 +12,7 @@ from tae.engine.eoh import EVOL  # type: ignore  # noqa: E402
 from tae.engine.methods.management.pop_pareto import performance_slack
 from tae.engine.utils.getParas import Paras  # type: ignore  # noqa: E402
 
-from tae.runners.jssp_construct import JSSPCONST  # noqa: E402
+from tae.tasks.jssp.problem import JSSPCONST  # noqa: E402
 
 
 def main() -> None:

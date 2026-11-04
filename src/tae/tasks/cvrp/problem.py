@@ -10,7 +10,6 @@ from pathlib import Path
 import numpy as np
 from tae.engine.evaluation_pool import RolloutPool, bounded_evaluation
 
-from .get_instance import GetData
 from .prompts import GetPrompts
 
 from tae.analysis.population import (
@@ -57,8 +56,7 @@ class CVRPCONST():
         if train_pkl:
             self.instance_data = self._load_from_pickle(Path(train_pkl), self.n_instance, self.problem_size)
         else:
-            get_data = GetData(self.n_instance, self.problem_size, self.capacity)
-            self.instance_data = get_data.generate_instances()
+            raise ValueError("CVRP training requires a fixed dataset: set EOH_CVRP_TRAIN_PKL")
         self.n_instance = len(self.instance_data)
         if not self.n_instance:
             raise ValueError("CVRP requires at least one training instance")

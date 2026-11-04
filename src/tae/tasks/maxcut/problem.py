@@ -28,8 +28,6 @@ from tae.tasks.maxcut.data import (
     load_maxcut_bench_directory,
     load_maxcut_bench_mixed_split,
     load_maxcut_bench_split,
-    random_ba_instances,
-    random_er_instances,
 )
 from tae.tasks.maxcut.eco_teacher import EcoDQNTeacher
 
@@ -100,11 +98,7 @@ class MAXCUTFLIP:
         graph_set = os.environ.get("EOH_MAXCUT_GRAPH_SET", "").strip()
         if graph_set:
             return load_eco_graph_set(graph_set)[: self.n_instance]
-        if self.distribution == "ba":
-            m = int(os.environ.get("EOH_MAXCUT_BA_M", "4"))
-            return random_ba_instances(self.n_instance, self.n_nodes, m, seed=self.seed)
-        p = float(os.environ.get("EOH_MAXCUT_ER_P", "0.15"))
-        return random_er_instances(self.n_instance, self.n_nodes, p, seed=self.seed)
+        raise ValueError("Max-Cut training requires a fixed graph dataset; set EOH_MAXCUT_BENCH_DIR")
 
     def _teacher_for_instance(self, instance: MaxCutInstance):
         if not self.teacher_aware:

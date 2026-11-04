@@ -111,9 +111,16 @@ candidates; a failed candidate does not trigger an extra semantic generation.
 | `scripts/run.py` | Portable experiment launcher |
 | `src/tae/engine/` | Evolution operators, selection and LLM clients; adapted from EoH |
 | `src/tae/analysis/` | Population diagnosis and structural memory |
-| `src/tae/tasks/` | JSSP and Max-Cut state, simulator and heuristic interfaces |
+| `src/tae/tasks/{jssp,tsp,cvrp,maxcut}/` | Each task's training, evaluation, data, problem interface and prompts |
 | `src/tae/teachers/` | LEHD adapter; task-specific JSSP/Max-Cut adapters reside with their interfaces |
-| `src/tae/runners/` | Training and standalone evaluation entry points |
+
+All four tasks use the same layout: `train.py`, `evaluate.py`, `problem.py`,
+`data.py`, and `prompts.py`. Task-specific simulators and teachers stay alongside
+their task; the shared LEHD routing teacher remains in `teachers/`.
+
+Training reads the fixed dataset supplied with `--data`. Changing `--seed`
+changes the evolution run, not the training instances. Missing training data
+raises an error instead of generating a different dataset.
 
 Generated programs, historical initialization banks, and experimental outputs are
 not bundled. Supply five initial programs through `--seed-programs`.
@@ -123,10 +130,10 @@ not bundled. Supply five initial programs through `--seed-programs`.
 Standalone entry points are available as Python modules:
 
 ```bash
-python -m tae.runners.evaluate_jssp_construct_eoh --help
-python -m tae.runners.evaluate_tsp_construct_eoh --help
-python -m tae.runners.evaluate_cvrp_construct_eoh --help
-python -m tae.runners.evaluate_maxcut_bench_eoh --help
+python -m tae.tasks.jssp.evaluate --help
+python -m tae.tasks.tsp.evaluate --help
+python -m tae.tasks.cvrp.evaluate --help
+python -m tae.tasks.maxcut.evaluate --help
 ```
 
 Select programs using training performance before evaluating held-out instances.

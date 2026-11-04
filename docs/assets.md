@@ -26,6 +26,21 @@ JSSP checkpoint directories must contain the files expected by Offline-LD's
 
 Only load pickle datasets and model checkpoints from trusted sources.
 
+## Fixed training data
+
+Pass the same dataset path and training count to every evolution seed and method.
+The default subsets are the first 100 JSSP instances, first 64 TSP/CVRP instances,
+and first 30 Max-Cut graphs. Max-Cut graph files are loaded in sorted order.
+`--seed` controls evolution; it does not resample these subsets. Keep held-out
+datasets separate and pass them to the evaluation entry points.
+
+Both the launcher and task problem interfaces require fixed training data.
+There is no implicit random-data fallback. Dataset generation utilities are
+explicit, separate preparation steps; generate a dataset once and reuse it.
+
+The historical training files are not bundled with this source release. Using
+an arbitrary upstream split is not a substitute for those exact files.
+
 ## Initial programs
 
 Pass an external JSON list of five records using `--seed-programs`. Each record

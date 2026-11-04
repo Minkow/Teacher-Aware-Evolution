@@ -9,7 +9,6 @@ import threading
 import warnings
 from pathlib import Path
 from .prompts import GetPrompts
-from .get_instance import GetData
 
 from tae.analysis.population import (
     build_teacher_views,
@@ -74,8 +73,7 @@ class TSPCONST():
         if train_pkl:
             self.instance_data = self._load_from_pickle(Path(train_pkl), self.n_instance, self.problem_size)
         else:
-            getData = GetData(self.n_instance,self.problem_size)
-            self.instance_data = getData.generate_instances()
+            raise ValueError("TSP training requires a fixed dataset: set EOH_TSP_TRAIN_PKL")
         self.n_instance = len(self.instance_data)
         if not self.n_instance:
             raise ValueError("TSP requires at least one training instance")
