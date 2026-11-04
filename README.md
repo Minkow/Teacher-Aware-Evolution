@@ -97,6 +97,8 @@ terminated and reaped, and their slots are replaced for subsequent evaluations.
 provider/model. Run seeds separately using `--seed` and distinct output paths.
 The launcher never starts a new run inside a nonempty output directory.
 
+</details>
+
 ## Project Layout
 
 | Path | Contents |
