@@ -58,7 +58,7 @@ python scripts/run.py --task tsp50 --seed 0 --dry-run
 
 ## Run Evolution
 
-Prepare the [data and teacher](docs/assets.md), then supply five initial programs
+The fixed training datasets are included. Prepare the [teacher](docs/assets.md), then supply five initial programs
 through `--seed-programs`:
 
 ```bash
@@ -66,7 +66,6 @@ export OPENAI_API_KEY='your-key'
 export OPENAI_BASE_URL='https://api.openai.com/v1'
 python scripts/run.py --task tsp50 --seed 0 \
   --seed-programs initial-programs.json \
-  --data data/tsp50/train.pkl \
   --teacher-root external/LEHD/single_objective \
   --checkpoint checkpoints/tsp/checkpoint-150.pt \
   --output runs/tsp50/s0
@@ -104,6 +103,7 @@ The launcher never starts a new run inside a nonempty output directory.
 | Path | Contents |
 | --- | --- |
 | `scripts/run.py` | Portable experiment launcher |
+| `datasets/` | Fixed training instances and file checksums |
 | `src/tae/engine/` | Evolution operators, selection and LLM clients; adapted from EoH |
 | `src/tae/analysis/` | Population diagnosis and structural memory |
 | `src/tae/tasks/{jssp,tsp,cvrp,maxcut}/` | Each task's training, evaluation, data, problem interface and prompts |
@@ -113,9 +113,9 @@ All four tasks use the same layout: `train.py`, `evaluate.py`, `problem.py`,
 `data.py`, and `prompts.py`. Task-specific simulators and teachers stay alongside
 their task; the shared LEHD routing teacher remains in `teachers/`.
 
-Training reads the fixed dataset supplied with `--data`. Changing `--seed`
-changes the evolution run, not the training instances. Missing training data
-raises an error instead of generating a different dataset.
+Training uses the bundled task dataset by default; `--data` selects a custom
+dataset. Changing `--seed` changes evolution, not the training instances.
+See [training datasets](datasets/README.md) for counts and sources.
 
 Generated programs, historical initialization banks, and experimental outputs are
 not bundled. Supply five initial programs through `--seed-programs`.

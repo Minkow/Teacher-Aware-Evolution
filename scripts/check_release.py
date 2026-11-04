@@ -1,5 +1,7 @@
 """Check release content without printing potential secret values."""
 import ast
+import hashlib
+import json
 from pathlib import Path
 import re
 import sys
@@ -18,6 +20,12 @@ PATTERNS = {
 
 def main():
     failures, count = [], 0
+    manifest = json.loads((ROOT / "datasets/manifest.json").read_text())["files"]
+    approved = {"datasets/" + name: info for name, info in manifest.items()}
+    for name in approved:
+        path = ROOT / name
+        if path.is_symlink() or not path.is_file() or not path.resolve().is_relative_to(ROOT / "datasets"):
+            failures.append((name, "missing or unsafe training asset"))
     for path in sorted(ROOT.rglob("*")):
         rel = path.relative_to(ROOT)
         if any(part in EXCLUDED or part.endswith(".egg-info") for part in rel.parts):
@@ -28,6 +36,11 @@ def main():
         if not path.is_file():
             continue
         count += 1
+        if rel.as_posix() in approved:
+            info = approved[rel.as_posix()]
+            if path.stat().st_size != info["bytes"] or hashlib.sha256(path.read_bytes()).hexdigest() != info["sha256"]:
+                failures.append((str(rel), "training asset checksum mismatch"))
+            continue
         if any(part in {"trash", "temp", "tmp", ".ruff_cache", ".mypy_cache", "htmlcov"} for part in rel.parts) or path.name in {".DS_Store", ".coverage"}:
             failures.append((str(rel), "temporary artifact"))
         if any(part in {"programs", "seeds", "generated_programs", "runs", "results", "data", "checkpoints", ".secrets"} for part in rel.parts):

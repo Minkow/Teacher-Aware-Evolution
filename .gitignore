@@ -28,4 +28,7 @@ external/
 *.pkl
 *.npz
 *.npy
+!datasets/**/*.pkl
+!datasets/**/*.npz
+!datasets/**/*.npy
 

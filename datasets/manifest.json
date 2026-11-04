@@ -1,0 +1,424 @@
+{
+  "files": {
+    "jssp10/train.npy": {
+      "sha256": "9dd2684a194157a7bab053293603e5af312ded6b7002166ad7e1681f815181d9",
+      "bytes": 80128
+    },
+    "jssp15/train.npy": {
+      "sha256": "5ba21160eae2e6dca6602f7fc4d86a0293566611deebf81a0c6f07da0acf2090",
+      "bytes": 180128
+    },
+    "jssp20/train.npy": {
+      "sha256": "76c9c31decdb38c250838473bcbfc34fafd1c0843d7033493e26ab9e896eecf9",
+      "bytes": 320128
+    },
+    "tsp50/train.pkl": {
+      "sha256": "3e1a72eb8ece4cd5846a06a55898ffbd2866c4d87b95f0bcca2e757f1a8c02f4",
+      "bytes": 1336064
+    },
+    "cvrp50/train.pkl": {
+      "sha256": "ff39084ec6e036c7be671762c3ac8a6130791b6d16459ced604e894c475a38ac",
+      "bytes": 46103
+    },
+    "maxcut/BA_200vertices_graph_0000.npz": {
+      "sha256": "92840124e2e6f05053c9d6a9630e91721f1eac66f64572213620cb8e53e2eb7c",
+      "bytes": 4106
+    },
+    "maxcut/BA_200vertices_graph_0001.npz": {
+      "sha256": "ff28afa021f637ad901bd72df873d84a04c254eca898c5eab132dabed4d1fc92",
+      "bytes": 4091
+    },
+    "maxcut/BA_200vertices_graph_0002.npz": {
+      "sha256": "872ad79afa34c0b831d320bb84aa7771ecbceb22b1ededdbb676d00e3d8f968c",
+      "bytes": 4093
+    },
+    "maxcut/BA_200vertices_graph_0003.npz": {
+      "sha256": "26a2589ccfa6922e55c93c930924f60a4449b77f2a800c17256b940ec1295735",
+      "bytes": 4086
+    },
+    "maxcut/BA_200vertices_graph_0004.npz": {
+      "sha256": "6892c93271caca6969537874fbf58b8a3169002df76ceb0eda961bdaaf243e03",
+      "bytes": 4086
+    },
+    "maxcut/BA_200vertices_graph_0005.npz": {
+      "sha256": "cb9febdc3f712cbf7a71ef73611281360d5751eb1193a1bfab64ced087162712",
+      "bytes": 4097
+    },
+    "maxcut/BA_200vertices_graph_0006.npz": {
+      "sha256": "4898c977f7105789844ab3bc15409a657ffccc34396c820fe1b2098fda69a14c",
+      "bytes": 4077
+    },
+    "maxcut/BA_200vertices_graph_0007.npz": {
+      "sha256": "938e929ef0cdd17251e2faf9312d9e018110b680345595040e490cefcada39ec",
+      "bytes": 4090
+    },
+    "maxcut/BA_200vertices_graph_0008.npz": {
+      "sha256": "39e0e2707d269ef72cbd5c503bf3407f0c45ff52755afc925a1b61e56ed52bd8",
+      "bytes": 4093
+    },
+    "maxcut/BA_200vertices_graph_0009.npz": {
+      "sha256": "4dbc032fb2edbdf0df7ebfb68f2403f8b87a73c144c370f1e1c07dcfc4b2856d",
+      "bytes": 4104
+    },
+    "maxcut/BA_200vertices_graph_0010.npz": {
+      "sha256": "679466de33455af4c713805847aaca5f62f5c7e074b093699f66737cd4a1b5d2",
+      "bytes": 4087
+    },
+    "maxcut/BA_200vertices_graph_0011.npz": {
+      "sha256": "0d5cb0b4faa22b118b0d4a063aa2584795f2a67b11682c49fab65f5f48e5fdef",
+      "bytes": 4113
+    },
+    "maxcut/BA_200vertices_graph_0012.npz": {
+      "sha256": "9c86f15a3b6db80ef11d79e6579e2484d813c54060f846e12cfa1c08c9d029fd",
+      "bytes": 4074
+    },
+    "maxcut/BA_200vertices_graph_0013.npz": {
+      "sha256": "4319efd090b356cbfc21de116ac3a641637ad12292aed27947866ddc5a10b685",
+      "bytes": 4076
+    },
+    "maxcut/BA_200vertices_graph_0014.npz": {
+      "sha256": "0ae359b82bc287c2c3e80e8639182103c47df2a6b1deaa909d12a088aa8c87d2",
+      "bytes": 4108
+    },
+    "maxcut/BA_200vertices_graph_0015.npz": {
+      "sha256": "9256e362e2badbec5e9b460b0eec66d9ae504d6194e38185475c9116a1e811f7",
+      "bytes": 4088
+    },
+    "maxcut/BA_200vertices_graph_0016.npz": {
+      "sha256": "6191a447a09aae711922f52a1e909ea1c15fc516365003a1892d96bf3f2b28aa",
+      "bytes": 4093
+    },
+    "maxcut/BA_200vertices_graph_0017.npz": {
+      "sha256": "f888a4fed0b7211b79ef7428c3b2ab4c801ec06ebf8994995e3513a5efb417dd",
+      "bytes": 4088
+    },
+    "maxcut/BA_200vertices_graph_0018.npz": {
+      "sha256": "da29e46c2f7e995822158a288ed471a001e207fcad43c7764b1cf36dcea9eb63",
+      "bytes": 4072
+    },
+    "maxcut/BA_200vertices_graph_0019.npz": {
+      "sha256": "0d2ca9301287b4b4dde4b43d9b569ed902230cd2bfd557839f68f164e471e0ef",
+      "bytes": 4102
+    },
+    "maxcut/BA_200vertices_graph_0020.npz": {
+      "sha256": "2f0a59ff4731d580e7aa656c651ef855316496e74f28dead944452bea029c502",
+      "bytes": 4087
+    },
+    "maxcut/BA_200vertices_graph_0021.npz": {
+      "sha256": "4a5cd1729eeadd70c22a1ceb85f3ac604b997d04ed339140401535f47319a70b",
+      "bytes": 4088
+    },
+    "maxcut/BA_200vertices_graph_0022.npz": {
+      "sha256": "ea7c866ed3c737f318f2e274cf480c5346cdb9c47a91595f20b68566b9b901a3",
+      "bytes": 4085
+    },
+    "maxcut/BA_200vertices_graph_0023.npz": {
+      "sha256": "9233affac0c626bbdf2d3978adbfd6284bc1a7c261d64caf31c84a71e28e20f2",
+      "bytes": 4084
+    },
+    "maxcut/BA_200vertices_graph_0024.npz": {
+      "sha256": "b33420ce817f7592566755dbf6f7ad174f6a432c43cda5324154f9f4a5709828",
+      "bytes": 4106
+    },
+    "maxcut/BA_200vertices_graph_0025.npz": {
+      "sha256": "6964afa17872a8e2d1a6b5825f5c2b97f3db65208e5068db16fe1555c027cf0e",
+      "bytes": 4091
+    },
+    "maxcut/BA_200vertices_graph_0026.npz": {
+      "sha256": "a0b1c1bbf48217a41079d9ab18fec164a7ab8d6d86ed748abb6677b1cfcb36ae",
+      "bytes": 4103
+    },
+    "maxcut/BA_200vertices_graph_0027.npz": {
+      "sha256": "8bc4cbcd3625209550a00ef5ddf0c9c786ec48c135ce81f0bf8718fc2920e1fc",
+      "bytes": 4105
+    },
+    "maxcut/BA_200vertices_graph_0028.npz": {
+      "sha256": "c60574278b29bf8ddbcab910ca3cd9d3acabbb331110e4536c50eeb2c9a6bb22",
+      "bytes": 4118
+    },
+    "maxcut/BA_200vertices_graph_0029.npz": {
+      "sha256": "3633ccc3e50e30997ddcee510311c904a2c4c3d6a7b0427ce7dd729243b5c63a",
+      "bytes": 4086
+    },
+    "maxcut/BA_200vertices_graph_0030.npz": {
+      "sha256": "b3f23d99dcfe4e31b40b1677b9802c09237f11feb7054c082dde18a49c12296b",
+      "bytes": 4083
+    },
+    "maxcut/BA_200vertices_graph_0031.npz": {
+      "sha256": "ac416c79fe1c366a0ba216d3a162736afdbdcc324281b0e0975d4ff2c0613f27",
+      "bytes": 4113
+    },
+    "maxcut/BA_200vertices_graph_0032.npz": {
+      "sha256": "f8c3cc92e68414ae473a1ccb9edae1adbad9791257e7046886851c3e424a0ed8",
+      "bytes": 4055
+    },
+    "maxcut/BA_200vertices_graph_0033.npz": {
+      "sha256": "6a6138853de52fcf7ab5e5d2414a62d756a1384654df15547098bea38a816537",
+      "bytes": 4089
+    },
+    "maxcut/BA_200vertices_graph_0034.npz": {
+      "sha256": "7fe0f03c81b545554ebf51f522e7045c3cc347cd4a884583917d018fed42a338",
+      "bytes": 4060
+    },
+    "maxcut/BA_200vertices_graph_0035.npz": {
+      "sha256": "ae9a6d84c987d20cd45fa5a596fb62c2d9b7843b12797f3681f85cacdbf00ff5",
+      "bytes": 4073
+    },
+    "maxcut/BA_200vertices_graph_0036.npz": {
+      "sha256": "99b6631b74e0db78d254174887bce6c7deb497f62af2ca12f9abde4256f6bd87",
+      "bytes": 4088
+    },
+    "maxcut/BA_200vertices_graph_0037.npz": {
+      "sha256": "83ac8544b379079113f9cad02e5f905d1b35a582fd00e3f78cec787fb770e8a6",
+      "bytes": 4111
+    },
+    "maxcut/BA_200vertices_graph_0038.npz": {
+      "sha256": "6aa4a4f75c7a7e2826d7657e797bea5645630d4ac78d9c09b90118d813e0228f",
+      "bytes": 4071
+    },
+    "maxcut/BA_200vertices_graph_0039.npz": {
+      "sha256": "74b6f055602dc6a1bfd573852e3184f950b2614bae880813f19bccd648d764e7",
+      "bytes": 4102
+    },
+    "maxcut/BA_200vertices_graph_0040.npz": {
+      "sha256": "6813615a3956fd8c1d935e8f4e25287e2cb17aedaee71a1b20f3ceeb4a939764",
+      "bytes": 4079
+    },
+    "maxcut/BA_200vertices_graph_0041.npz": {
+      "sha256": "4553d8401f8cdd02f2942c8ffb287dca1c0286ae20d95b5b9189660e0a818f0a",
+      "bytes": 4063
+    },
+    "maxcut/BA_200vertices_graph_0042.npz": {
+      "sha256": "eedc31150eb9f539c7b42553075d197c689bc58267e95693f63980d6c8f34415",
+      "bytes": 4079
+    },
+    "maxcut/BA_200vertices_graph_0043.npz": {
+      "sha256": "0f45fdb9ef1578ce4466d4758cbc48b38e4e0c470241d22ab494cdef7c847c13",
+      "bytes": 4098
+    },
+    "maxcut/BA_200vertices_graph_0044.npz": {
+      "sha256": "61103ee71581b462c3bd7312654738494cab2eb49924d49b6b5e7965fa0a5264",
+      "bytes": 4097
+    },
+    "maxcut/BA_200vertices_graph_0045.npz": {
+      "sha256": "7c413cf8ff3e82b54437d74bb66fe3e6f32fa142b72fe042eceb8d2022723f3e",
+      "bytes": 4070
+    },
+    "maxcut/BA_200vertices_graph_0046.npz": {
+      "sha256": "090337a2623c62ed0cbc27dca491fc742786a59240f3966a1a799c08ff7203d4",
+      "bytes": 4079
+    },
+    "maxcut/BA_200vertices_graph_0047.npz": {
+      "sha256": "2cb9f389a0cb536e91b1a5638a7f51fc098ed2c6f1a56e73d13da59f27a8a083",
+      "bytes": 4066
+    },
+    "maxcut/BA_200vertices_graph_0048.npz": {
+      "sha256": "df2062337705c7b7efcd563fe804d7d040853e4dd0b3ed79f21a137e0566f29f",
+      "bytes": 4087
+    },
+    "maxcut/BA_200vertices_graph_0049.npz": {
+      "sha256": "2a772f071ddebe98f43f72643aecc9f35659b8f688025ffa8d841e2039835e11",
+      "bytes": 4102
+    },
+    "maxcut/BA_200vertices_graph_0050.npz": {
+      "sha256": "ad5570a5d0ed1cda9e96939bc683e7b1122435e299e25a9233f2eda18e57bc52",
+      "bytes": 4092
+    },
+    "maxcut/BA_200vertices_graph_0051.npz": {
+      "sha256": "6c964a73e5fa946b4b27baf569cea864d460d46414e26f4648dd6d8d40841951",
+      "bytes": 4067
+    },
+    "maxcut/BA_200vertices_graph_0052.npz": {
+      "sha256": "f3d2b1c0ede80235117d218895035688d3991f78898aec3d199f004074471020",
+      "bytes": 4088
+    },
+    "maxcut/BA_200vertices_graph_0053.npz": {
+      "sha256": "6e62004341521fd76ca159853dd5fcf0adf4b6624830203806f42071ffccd74f",
+      "bytes": 4109
+    },
+    "maxcut/BA_200vertices_graph_0054.npz": {
+      "sha256": "a8119b0b91efdbc5d321228c1eb8a54cf01c7039d79e7355940274639887251f",
+      "bytes": 4109
+    },
+    "maxcut/BA_200vertices_graph_0055.npz": {
+      "sha256": "232ac96682ed87c3e811aaea2b948193cab95dddd6eda448464cffec9b2364e0",
+      "bytes": 4072
+    },
+    "maxcut/BA_200vertices_graph_0056.npz": {
+      "sha256": "44b33fce182f8dcd1f65a1deb98695769fa0c55f0bb4fd63b3192477d5b7dd83",
+      "bytes": 4102
+    },
+    "maxcut/BA_200vertices_graph_0057.npz": {
+      "sha256": "288685f5fa89c5abb6f92753eef8cc5e9d3815657cd1b6d2e146dd9f4a6d40b8",
+      "bytes": 4042
+    },
+    "maxcut/BA_200vertices_graph_0058.npz": {
+      "sha256": "214b94086e45a66282c7665f1489e0d91301d30f3582c9e66c68ee5bb011679d",
+      "bytes": 4087
+    },
+    "maxcut/BA_200vertices_graph_0059.npz": {
+      "sha256": "e29165cafddf07b85379c5b91db2cf060b9d54e4ba46123bb4a8b11ebac4ab9c",
+      "bytes": 4111
+    },
+    "maxcut/BA_200vertices_graph_0060.npz": {
+      "sha256": "6239cbea64c7038bb15b21e46fd8b855922368194737dbb3e9bb31f43028567e",
+      "bytes": 4081
+    },
+    "maxcut/BA_200vertices_graph_0061.npz": {
+      "sha256": "24c7956144a4c61981e1ad4367687000cba5ed9f80e2e8d0e055b17c21e47a64",
+      "bytes": 4125
+    },
+    "maxcut/BA_200vertices_graph_0062.npz": {
+      "sha256": "8a9e1e0efe9b9c5faec4c1e2af30cafcc0cfb477b97d7693d5698881f86091d9",
+      "bytes": 4082
+    },
+    "maxcut/BA_200vertices_graph_0063.npz": {
+      "sha256": "943cdedc42eb1f712eccde814cba5ed3eadbd4634d5573f33a6a19bf1416c0a1",
+      "bytes": 4092
+    },
+    "maxcut/BA_200vertices_graph_0064.npz": {
+      "sha256": "db8ebb5142b921a0772ce7f3fdac27ab28328d888cae4ac9ddd1d1214e413764",
+      "bytes": 4122
+    },
+    "maxcut/BA_200vertices_graph_0065.npz": {
+      "sha256": "90358daa1460d825fc931bf7bffbba41fc23f99aa998268ccf75b32fba3634bd",
+      "bytes": 4087
+    },
+    "maxcut/BA_200vertices_graph_0066.npz": {
+      "sha256": "57f59c393a83c9d19ea5f171751b50473f83b30e4614e5a316a0a2cbb4cecbed",
+      "bytes": 4110
+    },
+    "maxcut/BA_200vertices_graph_0067.npz": {
+      "sha256": "50349ea2df4ab3486c5254ef2b4a75e409bb04191a0dc67bc163e18b9bfa11e3",
+      "bytes": 4085
+    },
+    "maxcut/BA_200vertices_graph_0068.npz": {
+      "sha256": "2c6c7a7da41e0af87a88c35139a4d487c715b15547ee075b23cbdcfa37ff7665",
+      "bytes": 4086
+    },
+    "maxcut/BA_200vertices_graph_0069.npz": {
+      "sha256": "b40696be640d45c693810c3e5ef13975aec897e8dca082def2d9c69e6d738f28",
+      "bytes": 4113
+    },
+    "maxcut/BA_200vertices_graph_0070.npz": {
+      "sha256": "1eca95a0c5f09790f5bb6d938843efec00c39e7f11d615cd60b13360c545464f",
+      "bytes": 4094
+    },
+    "maxcut/BA_200vertices_graph_0071.npz": {
+      "sha256": "4af4c4df78a772789a72077a42da47f5e8d0bb2578a9d41841742b4a4f277188",
+      "bytes": 4110
+    },
+    "maxcut/BA_200vertices_graph_0072.npz": {
+      "sha256": "7a01d513354ca3d86bbc1e133bdabe6d2085044c5afaa8bfaca2f15eace21e3c",
+      "bytes": 4066
+    },
+    "maxcut/BA_200vertices_graph_0073.npz": {
+      "sha256": "533c8f2b6192dd4ed0fc923947763989393408ef6dd69d17a6b61819507f4a70",
+      "bytes": 4072
+    },
+    "maxcut/BA_200vertices_graph_0074.npz": {
+      "sha256": "7c1a15e22ba8a1fd670b8de482eb0340ad39aef259e033cfe69808c2a060b91a",
+      "bytes": 4078
+    },
+    "maxcut/BA_200vertices_graph_0075.npz": {
+      "sha256": "b754e8e509e181b674cfe6c5240f16c1ee993bbd68c82ce52dc81698aa62a3f2",
+      "bytes": 4101
+    },
+    "maxcut/BA_200vertices_graph_0076.npz": {
+      "sha256": "03aff001b443976bec247c0ba7e52423b942bb8715399956635231a029e8eb61",
+      "bytes": 4081
+    },
+    "maxcut/BA_200vertices_graph_0077.npz": {
+      "sha256": "82f7580cd60701defc73d16985941b994f80988337dffef86928d8d8c8304fba",
+      "bytes": 4112
+    },
+    "maxcut/BA_200vertices_graph_0078.npz": {
+      "sha256": "8bf9e1539f1fcea04992afb3d9b6b62516a554e9806f614fe7c8e3c8d60b54c2",
+      "bytes": 4093
+    },
+    "maxcut/BA_200vertices_graph_0079.npz": {
+      "sha256": "14b8d0c7bdedb33e20d48eb711ee871a950a5948e6e2f816c3cfc7815ee0c0ff",
+      "bytes": 4080
+    },
+    "maxcut/BA_200vertices_graph_0080.npz": {
+      "sha256": "45637b0bbe39e6ae9f2d88b477196de44b5c794b7d61ce16d3caf63d3dc53005",
+      "bytes": 4101
+    },
+    "maxcut/BA_200vertices_graph_0081.npz": {
+      "sha256": "2bc82e0d9edefe6091578dafa9a199278edb933701415baf1573207a4164236c",
+      "bytes": 4078
+    },
+    "maxcut/BA_200vertices_graph_0082.npz": {
+      "sha256": "36e1e7af1327bfef24847916ecd0852071d43efffc76e0c3e5eb4e93f5fc1d8a",
+      "bytes": 4091
+    },
+    "maxcut/BA_200vertices_graph_0083.npz": {
+      "sha256": "09fe1ea5e4095845d9a42d209420fdfa48fbb023e09f5e7162a28de5ed4a5b2c",
+      "bytes": 4075
+    },
+    "maxcut/BA_200vertices_graph_0084.npz": {
+      "sha256": "4e41bcd757af107594f98dc5695aa13155b47582ce4e426f26448d0a9e81b935",
+      "bytes": 4101
+    },
+    "maxcut/BA_200vertices_graph_0085.npz": {
+      "sha256": "1b5fbe9748e93476539982edc3b430e320c3c0ff3757756935c04709b5abe319",
+      "bytes": 4072
+    },
+    "maxcut/BA_200vertices_graph_0086.npz": {
+      "sha256": "560c58d9be2852318dcbe98b15a0ee1d6021dbf44b71ae0fc0c0e9bcaf29fb0d",
+      "bytes": 4098
+    },
+    "maxcut/BA_200vertices_graph_0087.npz": {
+      "sha256": "b4ad31b8e4820898139808f377596f6db25d9f265fe051a97780f06a00879773",
+      "bytes": 4105
+    },
+    "maxcut/BA_200vertices_graph_0088.npz": {
+      "sha256": "b44b716c5a8f8f1cdf8ca3c49dee115657d7125127134b3ba0c1966471e700eb",
+      "bytes": 4087
+    },
+    "maxcut/BA_200vertices_graph_0089.npz": {
+      "sha256": "d1e399cad07f5fcee4968d11a5dba8b8229e9faafaf793cd80bc025eb68c5fcd",
+      "bytes": 4071
+    },
+    "maxcut/BA_200vertices_graph_0090.npz": {
+      "sha256": "527d09a09b1a02395a5dafe8e167d206e839658c3bcae2db621c787584cb1895",
+      "bytes": 4082
+    },
+    "maxcut/BA_200vertices_graph_0091.npz": {
+      "sha256": "f73bfd5c9011a5f5f2167294dc9b1cbefa38c6fc66c7df254b4a9d1656f37ec3",
+      "bytes": 4067
+    },
+    "maxcut/BA_200vertices_graph_0092.npz": {
+      "sha256": "f498bc301501b1307254b05a0f02a9d70ee969176c76768b303fce5cb0adf619",
+      "bytes": 4078
+    },
+    "maxcut/BA_200vertices_graph_0093.npz": {
+      "sha256": "aa897caedf47ff448477e97aa0bd4dc5af1c40f466db14acc1bdb3b284e19259",
+      "bytes": 4078
+    },
+    "maxcut/BA_200vertices_graph_0094.npz": {
+      "sha256": "5e0f68f036ecc2129f18ed99c8bd121d6787b0c3844d8c3c39cae7c58f19a39a",
+      "bytes": 4092
+    },
+    "maxcut/BA_200vertices_graph_0095.npz": {
+      "sha256": "edfbe3cc36064ebb9011e8f87f59af1066913c84d5656424fe70f57047d7cfd0",
+      "bytes": 4115
+    },
+    "maxcut/BA_200vertices_graph_0096.npz": {
+      "sha256": "975d33e27620181597d03a7d404d9ed4a652dfdedd0164368d5a1f2326a38ceb",
+      "bytes": 4082
+    },
+    "maxcut/BA_200vertices_graph_0097.npz": {
+      "sha256": "f93d9ce80308e02700cd35d8cd685bdf35908cb8e6600d243d14b952c6317e1d",
+      "bytes": 4097
+    },
+    "maxcut/BA_200vertices_graph_0098.npz": {
+      "sha256": "bbc506a7167680160ee329335459bb27f6506ca9b50daeb2fc99b1ac571391d4",
+      "bytes": 4084
+    },
+    "maxcut/BA_200vertices_graph_0099.npz": {
+      "sha256": "1c367e59f52bb393cd62fe936517fc24239839ccb8f1193d3c72f0db487ca0a6",
+      "bytes": 4108
+    }
+  }
+}

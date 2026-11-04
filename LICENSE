@@ -6,6 +6,12 @@ Portions of the evolutionary engine are adapted from EoH
 (https://github.com/FeiLiu36/EoH), distributed under the same MIT license:
 Copyright (c) 2023
 
+JSSP training data are distributed from Offline-LD
+(https://github.com/jesserem/Offline-LD) under the same MIT license:
+Copyright (c) 2024 Jesse van Remmerden
+
+TSP training data are distributed from EoH under the same MIT license.
+
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights

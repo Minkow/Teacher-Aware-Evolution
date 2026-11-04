@@ -11,6 +11,19 @@ ROOT = Path(__file__).resolve().parents[1]
 TASKS = ("jssp10", "jssp15", "jssp20", "tsp50", "cvrp50", "maxcut", "jssp", "tsp", "cvrp")
 
 
+def bundled_data(args, family):
+    if family == "jssp":
+        size = int(args.task.removeprefix("jssp") or "10")
+        jobs, machines = args.jobs or size, args.machines or size
+        if jobs == machines and jobs in {10, 15, 20}:
+            return ROOT / "datasets" / f"jssp{jobs}" / "train.npy"
+    elif family in {"tsp", "cvrp"} and (args.problem_size or 50) == 50:
+        return ROOT / "datasets" / f"{family}50" / "train.pkl"
+    elif family == "maxcut" and (args.nodes or 200) == 200:
+        return ROOT / "datasets" / "maxcut"
+    raise ValueError("No bundled dataset for these dimensions; supply --data explicitly")
+
+
 def make_plan(args):
     family = "jssp" if args.task.startswith("jssp") else args.task.removesuffix("50")
     rollout_workers = args.rollout_workers if args.rollout_workers is not None else 12
@@ -24,6 +37,8 @@ def make_plan(args):
             raise ValueError(f"--{name.replace('_', '-')} must be positive and applicable to {family}")
     if args.train_count is not None and args.train_count <= 0:
         raise ValueError("--train-count must be positive")
+    if args.data is None:
+        args.data = bundled_data(args, family)
     env = {
         "EOH_MAX_FE": "100", "EOH_STRICT_FE": "0", "EOH_INITIAL_LLM_CHILDREN": "5",
         "EOH_INIT_SEED_FIRST": "1",
@@ -101,7 +116,7 @@ def parser():
         p.add_argument("--" + name, type=int, help="Override the task preset")
     p.add_argument("--capacity", type=float, help="CVRP vehicle capacity")
     p.add_argument("--output", type=Path, default=Path("runs/evolution"))
-    p.add_argument("--data", type=Path)
+    p.add_argument("--data", type=Path, help="Fixed training data; defaults to the bundled task dataset")
     p.add_argument("--teacher-root", type=Path)
     p.add_argument("--checkpoint", type=Path)
     p.add_argument("--workers", type=int, default=16)

@@ -1,8 +1,9 @@
 # Data and pretrained teachers
 
-Datasets and pretrained weights are not included in the source distribution.
-Obtain them from their original projects and follow their licenses. Keep them
-under ignored `data/`, `checkpoints/`, and `external/` directories.
+The historical fixed training datasets are included in [`datasets/`](../datasets/README.md).
+Pretrained weights and held-out datasets are obtained separately from their
+original projects. Keep custom datasets, weights and teacher sources under
+ignored `data/`, `checkpoints/`, and `external/` directories.
 
 Teacher source projects:
 
@@ -28,7 +29,9 @@ Only load pickle datasets and model checkpoints from trusted sources.
 
 ## Fixed training data
 
-Pass the same dataset path and training count to every evolution seed and method.
+The launcher selects the bundled training dataset for each task preset.
+Use `--data` to supply a custom dataset. Keep the same dataset and training count
+across evolution seeds and methods.
 The default subsets are the first 100 JSSP instances, first 64 TSP/CVRP instances,
 and first 30 Max-Cut graphs. Max-Cut graph files are loaded in sorted order.
 `--seed` controls evolution; it does not resample these subsets. Keep held-out
@@ -38,8 +41,8 @@ Both the launcher and task problem interfaces require fixed training data.
 There is no implicit random-data fallback. Dataset generation utilities are
 explicit, separate preparation steps; generate a dataset once and reuse it.
 
-The historical training files are not bundled with this source release. Using
-an arbitrary upstream split is not a substitute for those exact files.
+The bundled files are byte-identical copies of the historical training assets.
+Run `python scripts/check_release.py` to verify their SHA256 checksums.
 
 ## Initial programs
 
