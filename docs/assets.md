@@ -1,8 +1,9 @@
 # Data and pretrained teachers
 
 The historical fixed training datasets are included in [`datasets/`](../datasets/README.md).
-Pretrained weights and held-out datasets are obtained separately from their
-original projects. Keep custom datasets, weights and teacher sources under
+JSSP, TSP and CVRP held-out datasets are included under `datasets/testing/`.
+Pretrained weights are obtained separately from their original projects.
+Keep custom datasets, weights and teacher sources under
 ignored `data/`, `checkpoints/`, and `external/` directories.
 
 Teacher source projects:

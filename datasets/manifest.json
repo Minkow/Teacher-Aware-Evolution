@@ -419,6 +419,66 @@
     "maxcut/BA_200vertices_graph_0099.npz": {
       "sha256": "1c367e59f52bb393cd62fe936517fc24239839ccb8f1193d3c72f0db487ca0a6",
       "bytes": 4108
+    },
+    "testing/jssp/generatedData10_10_Seed300.npy": {
+      "sha256": "f1b359963c1f2653f8e9869ffd2a2505caf5e51dd621589db57fd7cc1071377e",
+      "bytes": 160128
+    },
+    "testing/jssp/generatedData15_15_Seed300.npy": {
+      "sha256": "7f5346f5dfd21e6cfdc54c349dc85a9c8da2b59cf370e5d6d2614e6c9f97a90d",
+      "bytes": 360128
+    },
+    "testing/jssp/generatedData20_20_Seed300.npy": {
+      "sha256": "8233267bfbc3e11403251ee62c0d05c6cd6394a970322e2aba8dc1474ecbbde3",
+      "bytes": 640128
+    },
+    "testing/jssp/generatedData30_20_Seed300.npy": {
+      "sha256": "1c5b23de8dbe47dfe20a40cda975d9c4a6dd010c536a5cf64da6aca61539c143",
+      "bytes": 960128
+    },
+    "testing/jssp/generatedData50_20_Seed300.npy": {
+      "sha256": "db3ac28c9cc374a2820afc84532b2e1019d44e99f98e1251ea20d83da3928038",
+      "bytes": 1600128
+    },
+    "testing/jssp/tai20x20.npy": {
+      "sha256": "b173c42b00b2d3e8cb17ebd76b2240732b7f33f428f3bff9b108295685b93c0f",
+      "bytes": 32128
+    },
+    "testing/jssp/tai30x20.npy": {
+      "sha256": "5081bf033d9475c2d86ee410867a2b3560718a394fd53098957715dc053db8e9",
+      "bytes": 48128
+    },
+    "testing/tsp/instance_data_20.pkl": {
+      "sha256": "6bb04afe321cef551a5b2d9947f0f26f74175fa46268952e2352ecababd9f384",
+      "bytes": 359366
+    },
+    "testing/tsp/instance_data_50.pkl": {
+      "sha256": "bef6d504d46dbc62057d0b612cea95aa3544a66674314d1c7320055472c96883",
+      "bytes": 2087537
+    },
+    "testing/tsp/instance_data_100.pkl": {
+      "sha256": "2b5ed7d0641a81d687489e5a6582e6a6f8ee76ed201dad1ab55e44b643ba5237",
+      "bytes": 8168221
+    },
+    "testing/tsp/instance_data_200.pkl": {
+      "sha256": "e0515feb3031ef6bcd3b54134bd58f87223a05bda45ebf02b9df28f9435a7d82",
+      "bytes": 32328221
+    },
+    "testing/tsp/TSPlib_70instances.txt": {
+      "sha256": "43ad097c6916098a9f5ca5ce4f2010671987ba94e11f68a0bb5ef8a2ad00e68b",
+      "bytes": 1403801
+    },
+    "testing/cvrp/test.pkl": {
+      "sha256": "d8a53029a4b40e29c88c128482684698e77fbd3e19658df384a5e88a68e38e7e",
+      "bytes": 71960
+    },
+    "testing/cvrp/vrp200_test_lkh.txt": {
+      "sha256": "618972db2acf810672cf2a4afaec07722a03c79160627c07d684628fcd2ea659",
+      "bytes": 1191387
+    },
+    "testing/cvrp/vrplib_192instances.txt": {
+      "sha256": "1ad3be547cb5f9cb53ca265c53500f1f3a2c0babd7807f9de2eeaaf8a144755f",
+      "bytes": 628575
     }
   }
 }

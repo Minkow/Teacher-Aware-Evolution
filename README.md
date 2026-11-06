@@ -103,7 +103,7 @@ The launcher never starts a new run inside a nonempty output directory.
 | Path | Contents |
 | --- | --- |
 | `scripts/run.py` | Portable experiment launcher |
-| `datasets/` | Fixed training instances and file checksums |
+| `datasets/` | Fixed training and held-out instances, with file checksums |
 | `src/tae/engine/` | Evolution operators, selection and LLM clients; adapted from EoH |
 | `src/tae/analysis/` | Population diagnosis and structural memory |
 | `src/tae/tasks/{jssp,tsp,cvrp,maxcut}/` | Each task's training, evaluation, data, problem interface and prompts |
@@ -121,6 +121,18 @@ Generated programs, historical initialization banks, and experimental outputs ar
 not bundled. Supply five initial programs through `--seed-programs`.
 
 ## Evaluation
+
+JSSP, TSP and CVRP ID/OOD test sets are bundled with fixed evaluation presets:
+
+```bash
+python scripts/evaluate.py --dataset tsp50 --result-dir runs/tsp50/s0
+python scripts/evaluate.py --dataset tsp200 --result-dir runs/tsp50/s0
+python scripts/evaluate.py --dataset tsplib70 --result-dir runs/tsp50/s0
+```
+
+See [test sets and counts](datasets/README.md#held-out-test-sets) for all presets.
+The wrapper evaluates the training-selected generation-5 program without API
+calls. Max-Cut test graphs still need to be obtained separately.
 
 Standalone entry points are available as Python modules:
 
